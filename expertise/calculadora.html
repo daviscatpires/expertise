@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+    <section class="container">
+        <label for="valor-conta" style="margin-bottom: 15px;">Digite o valor da conta: </label>
+        <input type="text" id="valor-conta" name="valor-conta" placeholder=" R$ 500,00" style="margin-bottom: 15px; width: 300px; height: 50px; border-radius: 15px; font-size: 20px;">
+        <button onclick="enviar()" class="btn">Calcular</button>
+
+        <div class="resultado">
+            <div class="descont">
+                O desconto é de <span id="valor-desconto"></span>
+            </div>
+            <div class="valor-total">
+                O valor total a pagar dessa conta é <span id="valor-desctotal"></span>
+            </div>
+            <div class="valor-desc-anual">
+                O total de desconto em 1 ano é <span id="valor-anual"></span>
+            </div>
+            <div class="condicoes">
+                Não garantimos até que seja feita a verificação das condições e termos com o comercial.
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script src="./js/calculadora.js"></script>
+</html>
